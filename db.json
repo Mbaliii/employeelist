@@ -59,6 +59,78 @@
       "country": "kenya",
       "address": "kajSBXNSJKAbn",
       "id": 5
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "god",
+      "dateofbirth": "19970312",
+      "position": "front-end",
+      "contact": "0680429720",
+      "country": "south africa",
+      "address": "71 Sekhukhune Link, Chiawelo, Soweto, South Africa\nSekhukhune Link",
+      "id": 6
+    },
+    {
+      "name": "",
+      "surname": "",
+      "email": "",
+      "bio": "",
+      "dateofbirth": "",
+      "position": "",
+      "contact": "",
+      "country": "",
+      "address": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "surname": "",
+      "email": "",
+      "bio": "",
+      "dateofbirth": "",
+      "position": "",
+      "contact": "",
+      "country": "",
+      "address": "",
+      "id": 8
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "x,bndkh.",
+      "dateofbirth": ",enwbjk",
+      "position": "jkbj",
+      "contact": "dmnfj",
+      "country": "south africa",
+      "address": "71 Sekhukhune Link, Chiawelo, Soweto, South Africa\nSekhukhune Link",
+      "id": 9
+    },
+    {
+      "name": "sibusiso",
+      "surname": "mazibuko",
+      "email": "mazibukokhathaza34@gmail.com",
+      "bio": "him",
+      "dateofbirth": "19972909",
+      "position": "designer",
+      "contact": "0680429720",
+      "country": "south africa",
+      "address": "7871 agness street dk",
+      "id": 10
+    },
+    {
+      "name": "Mbali",
+      "surname": "Thwala",
+      "email": "shezi71313@gmail.com",
+      "bio": "God",
+      "dateofbirth": "19971203",
+      "position": "back-end",
+      "contact": "0680429720",
+      "country": "south africa",
+      "address": "71 Sekhukhune Link, Chiawelo, Soweto, South Africa\nSekhukhune Link",
+      "id": 11
     }
   ]
 }

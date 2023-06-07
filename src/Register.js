@@ -15,12 +15,56 @@ const Register = () => {
 
 	const navigate = useNavigate();
 
+	const IsValidate = () => {
+		let isproceed = true;
+		let errormessage = "Enter the value below!!  "
+		if (name === null || name === '') {
+			isproceed = false;
+			errormessage += 'Name, ' ;
+		}
+		if (surname === null || surname === '') {
+			isproceed = false;
+			errormessage += 'Surname, '
+		}
+		if (bio === null || bio === '') {
+			isproceed = false;
+			errormessage += 'Bio, ';
+
+		}
+		if (contact === null || contact === ''){
+			isproceed = false;
+			errormessage += 'Contact, ';
+		}
+		if (position === null || position === ''){
+			isproceed = false;
+			errormessage += 'Position, ';
+		}
+
+		if (dateofbirth === null || dateofbirth === ''){
+			isproceed = false;
+			errormessage+= 'DateOfBirth, ';
+		}
+		if (!isproceed) {
+			toast.warning(errormessage);
+		}else{
+			if(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)){
+
+			}else{
+				isproceed = false;
+				toast.warning('Please enter a valid email ')
+			}
+		}
+		return isproceed
+	}
+
 
 
 	const handlesubmit = (e) => {
 		e.preventDefault();
 		let regobj = { name, surname, email, bio, dateofbirth, position, contact, country, address }
 		// console.log(regobj);
+		if (IsValidate()) {
+			
 		fetch("http://localhost:5000/user", {
 			method: "POST",
 			headers: { 'content-type': 'application/json' },
@@ -31,9 +75,9 @@ const Register = () => {
 
 		}).catch((err) => {
 			toast.error('Failed :' + err.message);
-
 		});
 	}
+}
 	return (
 		<div>
 			<div className="offset-lg-3 col-lg-6">
@@ -48,7 +92,7 @@ const Register = () => {
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Name <span className="errmsg">*</span></label>
-										<input required value={name} onChange={e => namechange(e.target.value)} className="form-control"></input>
+										<input value={name} onChange={e => namechange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
@@ -56,49 +100,49 @@ const Register = () => {
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Surname <span className="errmsg">*</span></label>
-										<input required value={surname} onChange={e => surnamechange(e.target.value)} className="form-control"></input>
+										<input value={surname} onChange={e => surnamechange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Email address <span className="errmsg">*</span></label>
-										<input required value={email} onChange={e => emailchange(e.target.value)} className="form-control"></input>
+										<input value={email} onChange={e => emailchange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Bio <span className="errmsg">*</span></label>
-										<input required value={bio} onChange={e => biochange(e.target.value)} className="form-control"></input>
+										<input value={bio} onChange={e => biochange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Date Of Birth <span className="errmsg">*</span></label>
-										<input required value={dateofbirth} onChange={e => dateofbirthchange(e.target.value)} className="form-control"></input>
+										<input value={dateofbirth} onChange={e => dateofbirthchange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Employee Position <span className="errmsg">*</span></label>
-										<input required value={position} onChange={e => positionchange(e.target.value)} className="form-control"></input>
+										<input value={position} onChange={e => positionchange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Contact Info <span className="errmsg">*</span></label>
-										<input required value={contact} onChange={e => contactchange(e.target.value)} className="form-control"></input>
+										<input value={contact} onChange={e => contactchange(e.target.value)} className="form-control"></input>
 									</div>
 								</div>
 
 								<div className="col-lg-6">
 									<div className="form-group">
 										<label>Country <span className="errmsg">*</span></label>
-										<select required value={country} onChange={e => countrychange(e.target.value)} className="form-control">
+										<select value={country} onChange={e => countrychange(e.target.value)} className="form-control">
 											<option value='china'>China</option>
 											<option value='kenya'>Kenya</option>
 											<option value='south africa'>South Africa </option>
@@ -110,7 +154,7 @@ const Register = () => {
 								<div className="col-lg-12">
 									<div className="form-group">
 										<label>Address</label>
-										<textarea required value={address} onChange={e => addresschange(e.target.value)} className="form-control"></textarea>
+										<textarea value={address} onChange={e => addresschange(e.target.value)} className="form-control"></textarea>
 									</div>
 								</div>
 
