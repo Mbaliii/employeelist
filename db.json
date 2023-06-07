@@ -131,6 +131,98 @@
       "country": "south africa",
       "address": "71 Sekhukhune Link, Chiawelo, Soweto, South Africa\nSekhukhune Link",
       "id": 11
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "beer",
+      "dateofbirth": "000000000",
+      "position": "yes",
+      "contact": "888888888",
+      "country": "south africa",
+      "address": "71 Sekhukhune Link, Chiawelo, Soweto, South Africa\nSekhukhune Link",
+      "id": 12
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "god",
+      "dateofbirth": "95",
+      "position": ",enw",
+      "contact": "elkmk",
+      "id": 13
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "god",
+      "dateofbirth": "95",
+      "position": ",enw",
+      "contact": "elkmk",
+      "id": 14
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "god",
+      "dateofbirth": "95",
+      "position": ",enw",
+      "contact": "elkmk",
+      "id": 15
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "god",
+      "dateofbirth": "95",
+      "position": ",enw",
+      "contact": "elkmk",
+      "id": 16
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "God",
+      "dateofbirth": "19971203",
+      "position": "Front-end",
+      "contact": "0680429720",
+      "id": 17
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "God",
+      "dateofbirth": "19971203",
+      "position": "Front-end",
+      "contact": "0680429720",
+      "id": 18
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "God",
+      "dateofbirth": "19971203",
+      "position": "Front-end",
+      "contact": "0680429720",
+      "id": 19
+    },
+    {
+      "name": "Mbali",
+      "surname": "Khumalo",
+      "email": "shezi7314@gmail.com",
+      "bio": "God",
+      "dateofbirth": "date of my day",
+      "position": "Front-end",
+      "contact": "0680429720",
+      "id": 20
     }
   ]
 }
