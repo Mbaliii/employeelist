@@ -7,8 +7,8 @@ function Home() {
 	const [data, setData] = useState([])
 	const navigate = useNavigate();
 	useEffect(() => {
-		axios.get(" http://localhost:5000/user")
-			.then(res => setData(res.data))
+		axios.get(" http://localhost:5000/user/")
+			.then(res => setData(res.data)) 
 			.catch(err => console.log(err));
 
 	}, []) 
@@ -16,10 +16,10 @@ function Home() {
 
 	const handleDelete = (id) => {
 		const confirm = window.confirm("Would you wish to delete? ");
-		if (confirm) {
-			axios.delete('http://localhost:5000/user' + id)
+		if (confirm) { 
+			axios.delete('http://localhost:5000/user/' + id)
 				.then(res => {
-					navigate('/')
+					navigate('/'); 
 				}).catch(err => console.log(err));
 		}
 
@@ -33,6 +33,12 @@ function Home() {
 				<div className="d-flex justify-content-end">
 					<Link to="/create" className="btn btn-success">Add +</Link>
 				</div>
+				<div className="flex-shrink-0 h-10 w-10">
+					<img src="${profile}" class="h-10 w-10 rounded-full" alt=""></img>
+				</div>
+				{/* <div class="flex-shrink-0 h-10 w-10">
+                    <img src="${profile}" class="h-10 w-10 rounded-full" alt="">
+                </div> */}
 				<table className="table table-striped ">
 					<thead>
 						<tr>

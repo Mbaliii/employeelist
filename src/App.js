@@ -8,16 +8,19 @@ import Create from './Create';
 import Update from './Update';
 import Read from './Read';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImageUpload from './ImageUpload';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path='/image/:id' element={<ImageUpload />}></Route>
+          {/* <Route path='image/:id' element={<ImageUpload />}</Routes> */}
           <Route path='/' element={<Home />}></Route>
           <Route path='/create' element={<Create />}></Route>
-          <Route path='/update/:id' element={<Update/>}></Route>
-          <Route path='/read/:id' element={<Read/>}></Route>
+          <Route path='/update/:id' element={<Update />}></Route>
+          <Route path='/read/:id' element={<Read />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
